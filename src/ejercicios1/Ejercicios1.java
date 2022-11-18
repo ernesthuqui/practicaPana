@@ -30,6 +30,7 @@ public class Ejercicios1 {
             totalCaja += total;
         }
         System.out.println("Caja: " + totalCaja);
+        //sdaskldnns
     }
 
 }
