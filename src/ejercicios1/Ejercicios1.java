@@ -43,7 +43,37 @@ public class Ejercicios1 {
 			totalCaja += total;
 		}
 		System.out.println("Caja: " + totalCaja);
-		//EJ3
+
+
+//EJERCICIO 2
+
+        String nombre;
+        char[] palindromo;
+        int x= 0, y;
+
+        System.out.print("Bienvenido, ingrese la palabra a analizar: ");
+        nombre = in.next();
+        //Cambiar todo a minúscula para que no exista ningún error al analizar
+        nombre = nombre.toLowerCase();
+        System.out.println(nombre + " Se analizará y se identifica como: ");
+        palindromo = nombre.toCharArray();
+        y= palindromo.length - 1;
+        while (x < y) {
+            if (palindromo[x] == palindromo[y]) {
+                x--;
+                y++;
+            } else {
+                System.out.println("NO ES PALÍNDROMO");
+                break;
+            }
+        }
+        if (x == y) {
+            System.out.println("SI ES PALÍNDROMO");
+        }
+    
+
+//EJERCICIO 3
+
 		float radio, area, longitud;
 		System.out.println("|------Longitud y Area------|");
 		System.out.println("ingrese el radio de la circuferncia");
